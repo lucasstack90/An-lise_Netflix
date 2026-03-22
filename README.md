@@ -13,7 +13,17 @@ Nesse projeto vai ser apresentado um gráfico criado em python junto das Bibliot
 ## 📈 1. Evolução de Lançamentos Brasileiros (Gráfico de Linhas)
 Este gráfico utiliza a **contagem anual** para monitorar o crescimento da produção nacional no catálogo. É a melhor forma de visualizar o investimento histórico da Netflix no Brasil ao longo dos anos.
 
-![Gráfico de Barras - Médias por Marca](imagens/grafico_barras.jpeg)
+![Gráfico de Barras - Médias por Marca](img/Grafico.png)
 
 * **O que ele mostra:** O ritmo de crescimento e os picos de lançamentos (como o visto em 2020).
 * **Função principal:** `filmes_BR['release_year'].value_counts().sort_index()`
+
+---
+
+## 💡 Por que este código funciona bem?
+
+value_counts(): Ele agrupa os anos repetidos e conta quantos títulos existem em cada um (transforma "vários 2020" em um número total).
+
+sort_index(): Esta é a "chave" do gráfico de linha. Ela garante que os anos apareçam em ordem cronológica (2012, 2013, 2014...) e não pela quantidade de filmes.
+
+marker='o': Visualmente, isso ajuda o leitor a identificar o ponto exato de cada dado no gráfico, facilitando a interpretação técnica.
