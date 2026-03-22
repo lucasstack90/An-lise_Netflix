@@ -1,4 +1,4 @@
-# 🚗 Projeto de Análise de Dados: Filmes da netflix
+# 📺 Projeto de Análise de Dados: Filmes da netflix
 
 Este repositório tem como objetivo análisar os dados apartir do arquivo "netflix_titles.csv". 
 
